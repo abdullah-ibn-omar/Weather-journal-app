@@ -8,7 +8,7 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static("./dist"))
+app.use(express.static("./docs"))
 console.log('hello from server')
 
 const port = 3000
@@ -39,4 +39,3 @@ function postData(req,res){
     projetData = newData
     
 }
-console.log("you will learn ")
